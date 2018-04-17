@@ -183,13 +183,14 @@
 		LazyLoad.css(playerCssFiles, function () {
 			LazyLoad.js(playerLibFiles, function () {
 				LazyLoad.js(playerJSFiles, function () {
-					if (klynt.data.general.level === 0 && !klynt.utils.browser.local) {
+					/*if (klynt.data.general.level === 0 && !klynt.utils.browser.local) {
 						errorMessage();
 					} else if (klynt.data.advanced.hasRemoteVideos && !klynt.utils.browser.local) {
 						estimateBandwith();
 					} else {
 						handlePlayerLoaded();
-					}
+					}*/
+					handlePlayerLoaded();
 				}, this.loader);
 			}, this.loader);
 		}, this.loader);
